@@ -1,6 +1,7 @@
 :root {
   --padding-var:10px;
   --margin-var:10px;
+  --colour-820700: #820700;
 }
 
 * {
@@ -9,7 +10,7 @@
 }
 
 a {
-  color:#820700;
+  color: var(--colour-820700);
   font-size: .8em;
 }
 
@@ -78,9 +79,39 @@ aside {
 article .content {
   padding:var(--padding-var);
   margin: var(--margin-var);
-  border-left: #772014 solid 3px;
-  border-right: #772014 solid 3px;
+  border-left: var(--colour-820700) solid 3px;
+  border-right: var(--colour-820700) solid 3px;
   border-radius: 20px;
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  justify-content: space-between;
+}
+
+.work {
+  margin: var(--margin-var);
+  position: relative;
+  width: 30%
+}
+
+.work img {
+  width: 100%; 
+  border: var(--colour-820700) solid 2px;
+}
+
+.work .label {
+  background-color: var(--colour-820700);
+  color: #ffffff;
+  text-align: start;
+  max-width: 20vw;
+  position: absolute;
+  bottom: 50px;
+  padding: var(--padding-var);
+  z-index: 10;
+}
+
+.first {
+  width: 100%;
 }
 
 footer {
@@ -95,7 +126,13 @@ footer p {
 }
 
 @media screen and (max-width: 992px) {
+  .work {
+    width: 45%;
+  }
 
+  .first {
+    width:100%
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -123,10 +160,14 @@ footer p {
     text-align: start;
   }
   article .content {
-    border-top: #772014 solid 3px;
-    border-bottom: #772014 solid 3px;
+    border-top: var(--colour-820700) solid 3px;
+    border-bottom: var(--colour-820700) solid 3px;
     border-left: none;
     border-right:none;
+  }
+
+  .work {
+    width: 100%;
   }
 }
 
