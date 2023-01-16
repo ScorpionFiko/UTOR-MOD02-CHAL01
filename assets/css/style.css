@@ -1,7 +1,10 @@
 :root {
   --padding-var:10px;
   --margin-var:10px;
-  --colour-820700: #820700;
+  --colour-accent: #820700;
+  --colour-hover: rgba(130, 7, 0, 50%);
+  --border-radius-var: 50px;
+  --form-border-radius-var: 20px;
 }
 
 * {
@@ -10,7 +13,7 @@
 }
 
 a {
-  color: var(--colour-820700);
+  color: var(--colour-accent);
   font-size: .8em;
 }
 
@@ -35,13 +38,13 @@ a {
 .name img {
   max-width: 100px;
   padding: var(--padding-var);
-  border-radius: 50px;
+  border-radius: var(--border-radius-var);
 }
 
 nav {
   text-decoration: none;
-padding: var(--padding-var);
-margin:var(--margin-var);
+  padding: var(--padding-var);
+  margin:var(--margin-var);
 }
 
 nav ul {
@@ -70,7 +73,7 @@ article {
 
 aside {
   
-  min-width:25vw;
+  min-width:15vw;
   text-align: end;
   padding:var(--padding-var);
   margin: var(--margin-var);
@@ -79,35 +82,48 @@ aside {
 article .content {
   padding:var(--padding-var);
   margin: var(--margin-var);
-  border-left: var(--colour-820700) solid 3px;
-  border-right: var(--colour-820700) solid 3px;
+  border-left: var(--colour-accent) solid 3px;
+  border-right: var(--colour-accent) solid 3px;
   border-radius: 20px;
   display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 }
 
 .work {
   margin: var(--margin-var);
   position: relative;
-  width: 30%
+  width: 30%;
+  border: var(--colour-accent) solid 2px;
 }
 
 .work img {
   width: 100%; 
-  border: var(--colour-820700) solid 2px;
 }
 
 .work .label {
-  background-color: var(--colour-820700);
+  background-color: var(--colour-accent);
   color: #ffffff;
   text-align: start;
   max-width: 20vw;
   position: absolute;
-  bottom: 50px;
+  bottom: 1em;
   padding: var(--padding-var);
   z-index: 10;
+}
+
+.work .label p {
+  font-size: .618em;
+  padding-top: var(--padding-var);
+}
+
+.work a:hover {
+  background-color: var(--colour-hover);
+  padding: 6.18px 10px 6.18px 10px;
+  display: block;
+  transition: all 0.5s ease 0s;
 }
 
 .first {
@@ -119,6 +135,72 @@ footer {
   padding:var(--padding-var);
   color: #ffffff;
   height: 10vh;
+}
+
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  min-width: 45%;
+  align-items: center;
+  margin:var(--margin-var);
+  padding: var(--padding-var;)
+}
+
+form input {
+  padding: var(--padding-var);
+  margin: var(--margin-var);
+  border-radius: var(--form-border-radius-var);
+  border: 2px solid  rgba(215, 215, 215, 0.85);
+  width: 100%;
+}
+
+form input {
+  outline: none;
+  border: 1.2px solid #b9C6ae;
+}
+
+form input:placeholder-shown {
+  border: 2px dashed  rgba(215, 215, 215, 1);
+}
+
+form textarea {
+  padding: var(--padding-var);
+  margin: var(--margin-var);
+  border-radius: var(--form-border-radius-var);
+  border: 2px solid  rgba(215, 215, 215, 0.85);
+  width: 100%;
+}
+
+form textarea {
+  outline: none;
+  border: 1.2px solid #b9C6ae;
+  border-radius: 20px;
+}
+
+form textarea:placeholder-shown {
+  border: 2px dashed  rgba(215, 215, 215, 1);
+}
+
+form .button {
+  padding: var(--padding-var);
+  margin: var(--margin-var);
+  border-radius: var(--border-radius-var);
+  border: 2px solid  var(--colour-accent);
+  background-color: var(--colour-accent);
+  color: #ffffff; 
+}
+
+form .button:hover {
+  border: 2px solid  var(--colour-accent);
+  color: var(--colour-accent);
+  background-color: #ffffff; 
+}
+
+
+.contact img {
+  max-width: 150px;
 }
 
 footer p {
@@ -133,6 +215,20 @@ footer p {
   .first {
     width:100%
   }
+
+  .work .label {
+    max-width: 100vw;
+  }
+
+  .contact {
+    min-width: 100%;
+  }
+  
+ .images {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -160,14 +256,19 @@ footer p {
     text-align: start;
   }
   article .content {
-    border-top: var(--colour-820700) solid 3px;
-    border-bottom: var(--colour-820700) solid 3px;
+    border-top: var(--colour-accent) solid 3px;
+    border-bottom: var(--colour-accent) solid 3px;
     border-left: none;
     border-right:none;
   }
 
   .work {
     width: 100%;
+  }
+
+  .images {
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 }
 
