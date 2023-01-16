@@ -20,6 +20,8 @@
   margin:10px;
   font-size: 2em;
   text-align: center;
+  display: inline-flex;
+  align-items: center;
 }
 
 nav {
@@ -39,7 +41,10 @@ nav ul li {
   padding: var(--padding-var);
   text-align: center;
 }
-
+.name img {
+  max-width: 100px;
+  padding: var(--padding-var);
+}
 @media screen and (max-width: 992px) {
   header {
     background: #772014;
@@ -54,6 +59,13 @@ nav ul li {
     justify-content: center;
   }
 
+  .name {
+    flex-direction: column;
+  }
+
+  .name img {
+    max-width: 100%;
+  }
   nav ul {
     flex-direction: column;
   }
