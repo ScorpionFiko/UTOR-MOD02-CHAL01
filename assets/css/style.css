@@ -8,12 +8,18 @@
   font-size: 20px;
 }
 
+a {
+  color:#820700;
+  font-size: .8em;
+}
+
 .header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items:center;
+  background-color: rgba(215, 215, 215, 0.85);
 }
 
 .name {
@@ -30,7 +36,6 @@
   padding: var(--padding-var);
   border-radius: 50px;
 }
-
 
 nav {
   text-decoration: none;
@@ -90,15 +95,10 @@ footer p {
 }
 
 @media screen and (max-width: 992px) {
-  header {
-    background: #772014;
-  }
+
 }
 
 @media screen and (max-width: 768px) {
-  header {
-    background: #8ac4ff;
-  }
   .header {
     justify-content: center;
   }
