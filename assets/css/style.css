@@ -145,7 +145,7 @@ footer {
   min-width: 45%;
   align-items: center;
   margin:var(--margin-var);
-  padding: var(--padding-var;)
+  padding: var(--padding-var);
 }
 
 form input {
