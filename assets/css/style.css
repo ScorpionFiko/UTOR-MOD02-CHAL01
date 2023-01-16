@@ -1,5 +1,6 @@
 :root {
   --padding-var:10px;
+  --margin-var:10px;
 }
 
 * {
@@ -17,17 +18,24 @@
 
 .name {
   padding: var(--padding-var);
-  margin:10px;
+  margin:var(--margin-var);
   font-size: 2em;
   text-align: center;
   display: inline-flex;
   align-items: center;
 }
 
+.name img {
+  max-width: 100px;
+  padding: var(--padding-var);
+  border-radius: 50px;
+}
+
+
 nav {
   text-decoration: none;
-padding: 10px;
-margin:10px;
+padding: var(--padding-var);
+margin:var(--margin-var);
 }
 
 nav ul {
@@ -41,10 +49,46 @@ nav ul li {
   padding: var(--padding-var);
   text-align: center;
 }
-.name img {
-  max-width: 100px;
-  padding: var(--padding-var);
+
+nav ul li a {
+  text-decoration: none;
 }
+
+article {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  padding:var(--padding-var);
+  margin: var(--margin-var);
+}
+
+aside {
+  
+  min-width:25vw;
+  text-align: end;
+  padding:var(--padding-var);
+  margin: var(--margin-var);
+}
+
+article .content {
+  padding:var(--padding-var);
+  margin: var(--margin-var);
+  border-left: #772014 solid 3px;
+  border-right: #772014 solid 3px;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: #58473f;
+  padding:var(--padding-var);
+  color: #ffffff;
+  height: 10vh;
+}
+
+footer p {
+  font-size: .5em;
+}
+
 @media screen and (max-width: 992px) {
   header {
     background: #772014;
@@ -64,10 +108,25 @@ nav ul li {
   }
 
   .name img {
-    max-width: 100%;
+    max-width: 100vw;
   }
   nav ul {
     flex-direction: column;
+  }
+
+  article {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100vw;
+    text-align: start;
+  }
+  article .content {
+    border-top: #772014 solid 3px;
+    border-bottom: #772014 solid 3px;
+    border-left: none;
+    border-right:none;
   }
 }
 
