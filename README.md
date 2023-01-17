@@ -31,7 +31,7 @@ The following discusses some of the features of the website and how it responds 
 ### Portfolio section:
 - Desktop: when viewed in a desktop, the most recent project (i.e. the first project in the list) will appear in full width; any additional project will show underneath with a maximum number of THREE per row
 - Tablet: when viewed in a tablet, the most recent project (i.e. the first project in the list) will appear in full width; any additional project will show underneath with a maximum number of TWO per row
-- Smart phone: all projects will appear one below the other and occupy the width of the screen. There is no special emphasis for the most recent project
+- Smart phone: when viewed in a tablet, all projects will appear in full width with a maximum of ONE per row. There is no special emphasis for the most recent project
 
 Projects with active links will "shrink" a little once the user hovers over them. For illustrative purposes, "coming soon" projects have been added to show the functionality.
 
