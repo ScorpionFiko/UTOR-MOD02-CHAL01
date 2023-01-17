@@ -139,6 +139,7 @@ article .content {
 /* sets up the style for the images within the work content */
 .work img {
   width: 100%; 
+  vertical-align: middle;
 }
 /* sets up the style for the label that goes on top of each work image */
 .work .label {
