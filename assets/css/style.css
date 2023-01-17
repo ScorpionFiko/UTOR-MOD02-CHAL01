@@ -69,7 +69,29 @@ nav ul li {
   padding: var(--padding-var);
   text-align: center;
 }
-
+/* sets up the styling for the banner image and tag line */
+.banner {
+  position: relative;
+  width: 100vw;
+}
+/* sets up the styling for the banner image */
+.banner img {
+  width: 100vw;
+}
+/* sets up the styling for the tag line */
+.banner .label {
+  position:absolute;
+  bottom: 10vh;
+  right: 10vw;
+  background-color: var(--colour-text);
+  color: var(--colour-accent);
+  padding: var(--padding-var);
+  margin: var(--margin-var);
+}
+/* sets up the style for the paragraph element within the label within the banner image */
+.banner .label p {
+  font-size: 1.5em;
+}
 /* sets up the style for the main content of the webpage*/
 article {
   display: flex;
@@ -84,6 +106,8 @@ aside {
   text-align: end;
   padding:var(--padding-var);
   margin: var(--margin-var);
+  font-size: 1.5em;
+  text-transform: capitalize;
 }
 /* sets up the style for the main content */
 article .content {
@@ -122,7 +146,7 @@ article .content {
   z-index: 10;
 }
 /* sets up the style for the paragraph text within the label on top of each work image */
-.work .label p {
+.work>.label p {
   font-size: .618em;
   padding-top: var(--padding-var);
 }
@@ -199,6 +223,15 @@ footer p {
 }
 /* TABLET styling */
 @media screen and (max-width: 992px) {
+  /* updates the banner label styling */
+  .banner .label {
+    bottom: 5vh;
+    right: 5vh;
+  }
+  /* updates the paragraph element within the label within the banner section */
+  .banner .label p {
+    font-size: 1em;
+  }
   /* updates the styling for the list of work */
   .work {
     width: 45%;
