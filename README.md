@@ -12,7 +12,7 @@ The website is divided into four main sections:
 - Footer: showing a simple copyright message in order for the website to have a complete look and feel 
 
 Below is the image of the application
-![Website](./assets/images/scorpionfiko.github.io_UTOR-MOD02-CHAL01_.png)
+![Website](./assets/images/scorpionfiko.github.io_UTOR-MOD02-CHAL01-Developer-Website_.png)
 
 ## Table of Contents
 
