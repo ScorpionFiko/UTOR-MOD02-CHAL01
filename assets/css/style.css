@@ -119,9 +119,15 @@ article .content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
   width: 100%;
   align-items: center;
+}
+/* sets up styling for the object justification */
+.justify-space-between {
+  justify-content: space-between;
+}
+.justify-space-evenly {
+  justify-content: space-evenly;
 }
 /* sets up the style for the list of projects main content */
 .work {
@@ -146,7 +152,7 @@ article .content {
   z-index: 10;
 }
 /* sets up the style for the paragraph text within the label on top of each work image */
-.work>.label p {
+.work .label p {
   font-size: .618em;
   padding-top: var(--padding-var);
 }
