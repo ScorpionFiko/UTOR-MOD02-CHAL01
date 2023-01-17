@@ -1,5 +1,5 @@
-# UTOR-MOD02-CHAL01
-University of Toronto - Coding Bootcamp - Module 02 - Challenge 01 - Repository for completed code
+# UTOR-MOD02-CHAL01-Developer-Website
+University of Toronto - Coding Bootcamp - Module 02 - Challenge 01 - Developer Website code
 
 ## Description
 
