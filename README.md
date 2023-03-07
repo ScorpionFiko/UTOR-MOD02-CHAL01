@@ -24,7 +24,7 @@ Below is the image of the application
 
 ## Installation
 
-No installation requirements. Click the URL https://scorpionfiko.github.io/UTOR-MOD02-CHAL01/ to open the webpage in your default browser.
+No installation requirements. Click the URL https://scorpionfiko.github.io/UTOR-MOD02-CHAL01-Developer-Website/ to open the webpage in your default browser.
 
 ## Functionality
 The following discusses some of the features of the website and how it responds to various devices. This section will not discuss how text boxes "shrink" in response to a different device, but will focus on how elements get rearranged based on device.
